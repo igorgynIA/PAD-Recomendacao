@@ -1,3 +1,4 @@
-# Sistema de Recomendação - Trabalho Final de PAD
+# PAD-Recomendacao
 
-Repositório focado no desenvolvimento do trabalho final da matéria "Pensamento Analítico de Dados" (PAD) do Bacharelado em Inteligência Artificial (BIA) da UFG. 
+
+[Dataset Spotify](https://www.kaggle.com/datasets/rodolfofigueroa/spotify-12m-songs)
