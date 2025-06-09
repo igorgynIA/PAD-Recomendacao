@@ -11,3 +11,5 @@ Repositório focado no desenvolvimento do trabalho final da matéria "Pensamento
 
 ### G (OBTER OS DADOS):
 - Dados de músicas presentes no Spotify: [Dataset Spotify](https://www.kaggle.com/datasets/rodolfofigueroa/spotify-12m-songs)
+
+### E (EXPLORAÇÃO)
