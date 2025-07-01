@@ -7,12 +7,13 @@ Repositório focado no desenvolvimento do trabalho final da matéria "Pensamento
 ## AGEMC do nosso projeto:
 
 ### A (ASK/PERGUNTA):
-- Com base no histórico de músicas desse usuário, quais músicas ele gostaria de escutar?
+- Com base no último filme que a pessoa asssitiu e gostou, quais filmes ela gostaria de asssitir também?
 
 ### G (OBTER OS DADOS):
-- Dados de músicas presentes no Spotify: [Dataset Spotify](https://www.kaggle.com/datasets/rodolfofigueroa/spotify-12m-songs)
+- Dados de músicas presentes no Spotify: [Dataset Movies TMDB](https://www.kaggle.com/datasets/asaniczka/tmdb-movies-dataset-2023-930k-movies)
 
 ### E (EXPLORAR OS DADOS):
+- Análise das distribuição dos dados numéricos do nosso dataset (se a distribuição é normal ou não) e análise de correlação entre as variáveis, por meio dde testes estatísticos. 
 
 ### M (MODELAR OS DADOS):
 
