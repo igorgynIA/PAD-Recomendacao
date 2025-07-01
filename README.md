@@ -13,7 +13,7 @@ Repositório focado no desenvolvimento do trabalho final da matéria "Pensamento
 - Dados de músicas presentes no Spotify: [Dataset Movies TMDB](https://www.kaggle.com/datasets/asaniczka/tmdb-movies-dataset-2023-930k-movies)
 
 ### E (EXPLORAR OS DADOS):
-- Análise das distribuição dos dados numéricos do nosso dataset (se a distribuição é normal ou não) e análise de correlação entre as variáveis, por meio dde testes estatísticos. 
+- Análise das distribuição dos dados numéricos do nosso dataset (se a distribuição é normal ou não) e análise de correlação entre as variáveis, por meio de testes estatísticos. 
 
 ### M (MODELAR OS DADOS):
 
