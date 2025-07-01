@@ -13,7 +13,7 @@ Para responder a essa pergunta, toda a modelagem de dados e a estrutura do proje
 
 - **G (GET):** 
 
-Os dados utilizados no projeto são os de filmes disponibilizados pelo[` `**MovieLens**,](https://grouplens.org/datasets/movielens/) especificamente as versões com 10 milhões e 20 milhões de avaliações. Este conjunto de dados contém diversos arquivos CSV separados, que descrevem principalmente as relações entre filmes, suas avaliações e tags associadas. Além desses datasets de base, ao  final  do  projeto,  Prateek  Gaurav  utiliza [` `**outros  dados** ](file:///C:/Users/igord/OneDrive/Documentos/TCE%20-%20OPDC.pdf) do  MovieLens  para enriquecer as informações e aprimorar a recomendação. Estes dados novos contêm mais detalhes sobre atores, notas, episódios e datas. 
+Os dados utilizados no projeto são os de filmes disponibilizados pelo[` `**MovieLens**,](https://grouplens.org/datasets/movielens/) especificamente as versões com 10 milhões e 20 milhões de avaliações. Este conjunto de dados contém diversos arquivos CSV separados, que descrevem principalmente as relações entre filmes, suas avaliações e tags associadas. Além desses datasets de base, ao  final  do  projeto,  Prateek  Gaurav  utiliza [` `**outros  dados** ](https://datasets.imdbws.com/) do  MovieLens  para enriquecer as informações e aprimorar a recomendação. Estes dados novos contêm mais detalhes sobre atores, notas, episódios e datas. 
 
 - **E (EXPLORE):** 
 
