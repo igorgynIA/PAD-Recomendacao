@@ -14,8 +14,9 @@ const Card = ({ movie, onClose }) => {
 
             setIsLoadingRecs(true);
             try {
+                const backendUrl = import.meta.env.VITE_BACKEND_URL;
                 // Faz a requisição para o servidor Flask usando o ID do filme
-                const response = await fetch(`http://localhost:5000/recommend/${movie.id}`);
+                const response = await fetch(`${backendUrl}/recommend/${movie.id}`);
                 const data = await response.json();
                 setRecommendations(data);
             } catch (error) {
