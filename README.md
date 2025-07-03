@@ -20,3 +20,5 @@ Repositório focado no desenvolvimento do trabalho final da matéria "Pensamento
 
 ### C (COMUNICAR OS RESULTADOS):
 - Interface interativa, feita em React, com os filmes para que a pessoa possa escolher o filme e veja quais são os filmes semelhantes a esse filme. 
+
+![Imagem exemplo front](image.png "Imagem que ilustra a tela da interface interativa.")
