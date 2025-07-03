@@ -1,0 +1,163 @@
+.homepage-container {
+  background-color: #141414;
+  color: white;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.7) 10%, rgba(0,0,0,0));
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+.header.scrolled {
+  background-color: #141414;
+}
+.header-left, .header-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.logo {
+  height: 25px;
+}
+.header nav a {
+  color: #e5e5e5;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.header nav a:hover, .header nav a.active {
+  color: white;
+  font-weight: bold;
+}
+.icon {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Hero Banner */
+.hero-banner {
+  height: 100vh;
+  background-image: url('https://www.themoviedb.org/t/p/original/n6bUvigpRFqSwmPp1m2YADdbRBc.jpg');
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.hero-content {
+  max-width: 40%;
+  padding-left: 3rem;
+  z-index: 5;
+}
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+.hero-content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 1rem 0 2rem;
+}
+.hero-fade {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 7.4rem;
+  background-image: linear-gradient(180deg, transparent, rgba(37,37,37,.61), #141414);
+}
+
+/* Movie Rows */
+.movie-section {
+  padding: 0 3rem 3rem;
+  margin-top: -150px; /* Puxa as fileiras para cima, sobre o fade */
+  position: relative;
+  z-index: 6;
+}
+.movie-row h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.movie-row {
+    margin-bottom: 30px;
+    position: relative;
+}
+.movie-row--listarea {
+    overflow-x: hidden;
+    padding-left: 30px;
+}
+.movie-row--list {
+    transition: all ease 0.5s;
+}
+.movie-posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding-bottom: 1rem; /* Espaço para a barra de rolagem */
+}
+/* Esconde a barra de rolagem mas mantém a funcionalidade */
+.movie-posters::-webkit-scrollbar {
+  display: none;
+}
+.poster-container {
+    display: inline-block;
+    width: 180px; /* Largura fixa para cada poster */
+    cursor: pointer;
+}
+.poster-container img:hover {
+    transform: scale(1);
+}
+.poster-container img {
+    width: 100%;
+    transform: scale(0.9);
+    transition: all ease 0.2s;
+}
+
+
+.movie-row--left,
+.movie-row--right {
+    position: absolute;
+    width: 40px;
+    height: 270px; /* Altura dos posters (180px * 1.5) */
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+
+.movie-row:hover .movie-row--left,
+.movie-row:hover .movie-row--right {
+    opacity: 1;
+}
+
+.movie-row--left {
+    left: 0;
+}
+
+.movie-row--right {
+    right: 0;
+}
+
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Quando a busca está aberta, o ícone da lupa some */
+.search-container .search-bar-container.open + .icon {
+    opacity: 0;
+    pointer-events: none;
+}
