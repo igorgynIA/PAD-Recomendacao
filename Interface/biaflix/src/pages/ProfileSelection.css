@@ -1,0 +1,72 @@
+body {
+  background-color: #141414;
+  color: #fff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Título principal - Trazendo de volta o estilo original */
+h1.display-4 {
+  font-size: 3.5vw; /* Tamanho fluido como no original */
+  font-weight: normal;
+}
+
+/* Link do perfil */
+.profile-link {
+  text-decoration: none;
+}
+
+/* Card do perfil - Mantém a imagem e a borda */
+.profile-card {
+  border: 3px solid transparent; /* Borda como no original */
+  transition: border-color 0.2s ease-in-out;
+  overflow: hidden;
+  border-radius: 4px; /* Arredondamento como no original */
+}
+
+.profile-link:hover .profile-card {
+  border-color: white;
+}
+
+/* Nome do perfil - Trazendo de volta o estilo original */
+.profile-name {
+  display: block;
+  margin-top: 0.8rem;
+  color: grey;
+  font-size: 1.3vw; /* Tamanho fluido como no original */
+  transition: color 0.2s ease-in-out;
+}
+
+.profile-link:hover .profile-name {
+  color: white;
+}
+
+/* Botão de Gerenciar - Sobrepondo o Bootstrap para ficar igual ao original */
+.btn-outline-secondary {
+  background-color: transparent !important; /* Garante que não haja fundo */
+  border: 1px solid grey;
+  color: grey;
+  padding: 0.6rem 1.8rem;
+  font-size: 1.2vw; /* Tamanho fluido como no original */
+  letter-spacing: 2px;
+  border-radius: 2px; /* Um leve arredondamento */
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-outline-secondary:hover {
+  color: white;
+  border-color: white;
+}
+
+/* Ajustes para telas menores, como no original */
+@media (max-width: 768px) {
+  h1.display-4 {
+    font-size: 5vw;
+  }
+  .profile-name {
+    font-size: 2.5vw;
+  }
+  .btn-outline-secondary {
+    font-size: 1.8vw;
+    padding: 0.5rem 1.5rem;
+  }
+}

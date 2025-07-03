@@ -1,0 +1,119 @@
+/* A sobreposição agora é o container de rolagem */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 1000;
+  overflow-y: auto; /* Permite a rolagem vertical */
+  padding: 3rem 1rem; /* Adiciona um respiro no topo/baixo e laterais */
+}
+
+/* O conteúdo do modal não tem mais altura máxima ou rolagem interna */
+.modal-content {
+  background-color: #141414 !important;
+  border-radius: 1rem !important;
+  width: 100%;
+  max-width: 900px;
+  position: relative;
+  color: white;
+  padding: 0;
+  margin: 0 auto; /* Centraliza o card horizontalmente */
+  overflow: hidden; /* Mantém as bordas arredondadas */
+}
+
+/* Estilos para o banner do modal */
+.modal-banner {
+    height: 400px;
+    background-size: cover;
+    background-position: center top;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 2rem 3rem;
+    flex-shrink: 0;
+}
+
+.modal-banner .banner-fade {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 7.4rem;
+    background-image: linear-gradient(180deg, transparent, rgba(20, 20, 20, 0.4), #141414);
+}
+
+.modal-banner .banner-content {
+    z-index: 2;
+    position: relative;
+}
+
+.modal-banner h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9); /* Borda/sombra para legibilidade */
+}
+
+.modal-banner .banner-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.modal-banner .btn-icon {
+    background-color: rgba(42, 42, 42, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.modal-banner .btn-icon:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: white;
+}
+
+/* Container para os detalhes, sem rolagem própria */
+.modal-details {
+    padding: 1.5rem 3rem;
+}
+
+.close-button {
+  position: fixed; /* Mude para 'fixed' para acompanhar a rolagem */
+  top: 1.5rem;
+  right: 2.5rem;
+  background: #141414;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  color: white;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+  z-index: 1001; /* Z-index maior que o overlay */
+}
+
+.close-button:hover {
+    background-color: #404040;
+}
+
+/* Efeito de fundo continua o mesmo */
+.homepage-container.modal-open > .header,
+.homepage-container.modal-open > .hero-banner,
+.homepage-container.modal-open > .movie-section {
+    filter: blur(5px) brightness(0.6);
+    transition: filter 0.3s ease-in-out;
+}
